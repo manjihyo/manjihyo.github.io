@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<head>
+    
+    <title>Registration Form</title>
+   
+</head>
+<style>
+  body {
+     
+  background-color: lightslategray;         
+  font-family: 'Oswald', sans-serif;
+ 
+}
+ .center{
+  width:450px;
+  height:800px;
+  margin: auto;
+  background-color: white;
+  
+  }
+  
+  h1{
+  text-align: center;
+  padding-top: 30px;
+  
+  }
+  
+  form{
+  width: 300px;
+  margin-left: 80px;
+  }
+ 
+       
+
+.form-group {
+  
+    margin-bottom: 15px;
+}
+
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+  
+    resize: vertical;
+}
+
+button {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+</style>
+<body>
+  <div class="center">
+    <h1>Registration Form</h1>
+    <form>  <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" required>
+        </div>
+        <div class="form-group">
+            <label for="nickName">Nick Name (optional):</label>
+            <input type="text" name="nickName" id="nickName">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div class="form-group">
+            <label for="dateOfBirth">Date of Birth:</label>
+            <input type="date" name="dateOfBirth" id="dateOfBirth" required>
+        </div>
+       
+            <label for="mobile">Mobile:</label>
+            <input type="tel" name="mobile" id="mobile">
+       
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" rows="4" required></textarea>
+       
+        <button style="background-color: green;">Submit</button>
+        <button style="background-color: red;">Reset</button>
+
+    </form>
+   </div>
+</body>
+</html>
